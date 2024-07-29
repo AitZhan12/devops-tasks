@@ -1,0 +1,22 @@
+1 	mkdir MyDirectory
+ 	touch MyDirectory/MyFile.txt
+  	ls -l
+
+2 	mkdir target_directory
+  	cp source_directory/*.txt target_directory/
+  	ls target_directory
+
+3 	grep -rl "ключевое_слово" .
+
+4 # Создание архива
+  	tar -cvf archive.tar file1.txt file2.txt MyDirectory
+  	# Распаковка архива
+  	tar -xvf archive.tar
+ 	 # Проверка восстановленных файлов
+  	ls -l
+
+5 # Создаем текстовый файл
+  	echo -e "строка1\nстрока2\nстрока3" > myfile.txt
+
+  	# Читаем файл и выводим строки в обратном порядке
+  	tac myfile.txt
